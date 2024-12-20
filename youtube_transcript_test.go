@@ -1,4 +1,4 @@
-package yt_words_go
+package main
 
 import (
 	"strings"

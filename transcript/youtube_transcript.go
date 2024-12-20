@@ -1,4 +1,4 @@
-package main
+package transcript
 
 import (
 	"encoding/json"
@@ -199,9 +199,6 @@ func extractTranscriptData(videoInfo string) ([]Transcript, error) {
 	}
 
 	captionsJSON := videoInfo[jsonStart:jsonEnd]
-
-	// Debug: Print the extracted JSON
-	// log.Printf("Extracted JSON: %s", captionsJSON)
 
 	// Check if the extracted JSON is empty or too short
 	if len(captionsJSON) < 10 {
