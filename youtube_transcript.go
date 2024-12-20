@@ -1,4 +1,4 @@
-package youtube_words_go
+package yt_words_go // this is the correct name of the package
 
 import (
 	"encoding/json"

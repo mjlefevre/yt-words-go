@@ -7,20 +7,19 @@ import (
 	"os"
 	"strings"
 
-	"github.com/youtube_words_go"
+	ytw "github.com/mjlefevre/yt-words-go"
 )
 
 func main() {
 	if len(os.Args) < 2 {
 		fmt.Printf("Usage: %s <YouTube URL or Video ID>\n", getBinaryName())
-		fmt.Printf("       %s <YouTube URL or Video ID>  (shorter alias)\n", "ytt")
 		os.Exit(1)
 	}
 
 	input := os.Args[1]
 	videoID := extractVideoID(input)
 
-	client := youtube_words_go.NewClient()
+	client := ytw.NewClient()
 
 	transcript, err := client.GetTranscriptString(videoID)
 	if err != nil {
