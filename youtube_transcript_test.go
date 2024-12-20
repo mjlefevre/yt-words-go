@@ -1,4 +1,4 @@
-package yt_words_go // this is the correct name of the package
+package yt_words_go
 
 import (
 	"strings"
