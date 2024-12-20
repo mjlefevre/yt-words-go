@@ -1,3 +1,3 @@
-module github.com/youtube_words_go
+module github.com/mjlefevre/yt-words-go
 
 go 1.16
